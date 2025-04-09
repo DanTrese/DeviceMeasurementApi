@@ -12,9 +12,8 @@ namespace DeviceMeasurementApi.Controllers
         [HttpPost]
         public IActionResult AddMeasurement([FromBody] Measurement measurement)
         {
-            // Here you would typically save the measurement to a database
-            // For this example, we'll just return it back in the response
-            return CreatedAtAction(nameof(AddMeasurement), new { measurement.Id }, measurement);
+            
+        return CreatedAtAction(nameof(AddMeasurement), new { measurement.Id }, measurement);
         }
     }
 }
