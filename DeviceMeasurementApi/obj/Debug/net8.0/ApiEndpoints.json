@@ -14,5 +14,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeviceMeasurementApi.Controllers.MeasurementsController",
+    "Method": "GetMeasurement",
+    "RelativePath": "api/Measurements",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DeviceMeasurementApi.Controllers.MeasurementsController",
+    "Method": "DeleteMeasurement",
+    "RelativePath": "api/Measurements",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

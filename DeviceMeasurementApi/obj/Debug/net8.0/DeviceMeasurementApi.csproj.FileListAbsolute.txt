@@ -170,3 +170,4 @@ C:\Users\danie\source\repos\DeviceMeasurementApi\DeviceMeasurementApi\obj\Debug\
 C:\Users\danie\source\repos\DeviceMeasurementApi\DeviceMeasurementApi\obj\Debug\net8.0\DeviceMeasurementApi.pdb
 C:\Users\danie\source\repos\DeviceMeasurementApi\DeviceMeasurementApi\obj\Debug\net8.0\DeviceMeasurementApi.genruntimeconfig.cache
 C:\Users\danie\source\repos\DeviceMeasurementApi\DeviceMeasurementApi\obj\Debug\net8.0\ref\DeviceMeasurementApi.dll
+C:\Users\danie\source\repos\DeviceMeasurementApi\DeviceMeasurementApi\obj\Debug\net8.0\DeviceMeasurementApi.sourcelink.json
