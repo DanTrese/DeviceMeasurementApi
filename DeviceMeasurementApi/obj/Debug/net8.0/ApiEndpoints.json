@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "DeviceMeasurementApi.Controllers.MeasurementsController",
+    "Method": "AddMeasurement",
+    "RelativePath": "api/Measurements",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "measurement",
+        "Type": "DeviceMeasurementApi.Models.Measurement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

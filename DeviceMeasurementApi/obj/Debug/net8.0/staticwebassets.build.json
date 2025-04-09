@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "bHAVg+ExLSiG+oLWSvKS495tsJfpU7GtKBxbTKkIQsQ=",
+  "Source": "DeviceMeasurementApi",
+  "BasePath": "_content/DeviceMeasurementApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
