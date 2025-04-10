@@ -34,6 +34,28 @@ namespace DeviceMeasurementApi.Controllers
            return Ok(_context.Measurements.ToList());                                                     
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetMeasurementById(int id)
+        {
+            var measurement = _context.Measurements.Find(id);
+            if (measurement == null)
+                return NotFound();
+            return Ok(measurement);
+        }
+
+        [HttpGet("latest")]
+        public IActionResult GetLatestMeasurement()
+        {
+            var latest = _context.Measurements
+            .OrderByDescending(m => m.Timestamp)
+            .FirstOrDefault();
+
+            if (latest == null)
+                return NotFound();
+
+            return Ok(latest);
+        }
+
         [HttpDelete]
         public IActionResult DeleteMeasurement(int id) 
         {
@@ -48,6 +70,27 @@ namespace DeviceMeasurementApi.Controllers
             _context.SaveChanges();
 
             return NoContent();
+        }
+        [HttpPut]
+        public IActionResult PutMeasurement(int id, [FromBody] Measurement measurement) 
+        {
+            var mesurementInDb = _context.Measurements.Find(id);
+
+            if (mesurementInDb == null) 
+            {
+                return NotFound();
+            } 
+            else if (measurement.Value < 0)
+            {
+                return BadRequest("Ungültige Messung.");
+            }
+
+                mesurementInDb.Timestamp = measurement.Timestamp;
+            mesurementInDb.Value = measurement.Value;
+
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }

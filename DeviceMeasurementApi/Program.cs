@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using DeviceMeasurementApi.Data;
+using DeviceMeasurementApi.Services;
 
 namespace DeviceMeasurementApi
 {
@@ -13,6 +14,9 @@ namespace DeviceMeasurementApi
             // Add services to the container.
             builder.Services.AddDbContext<MeasurementDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddHttpClient(); 
+            builder.Services.AddHostedService<MeasurementSimulator>(); 
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
